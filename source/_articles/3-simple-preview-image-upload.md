@@ -3,7 +3,7 @@ extends: _layouts.post
 section: content
 title: Membuat Simple Preview Image Upload
 date: 2015-12-06
-description: .
+description: Membuat simpe preview image upload menggunakan javascript
 ---
 
 Terkadang saat kita membuat fitur upload image, kita ingin mempermudah user dengan cara memberikan image preview terlebih dahulu sebelum file disubmit. Selain mengurangi kemungkinan user salah memilih gambar, juga bisa untuk memperkeren tampilan.

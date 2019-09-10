@@ -3,7 +3,7 @@ extends: _layouts.post
 section: content
 title: Belajar Git Men!
 date: 2015-12-9
-description: .
+description: Dasar dasar belajar git
 ---
 
 > Git adalah salah satu tools yang berfungsi sebagai Version Control System (VCS), sederhananya adalah alat untuk memanajemen perubahan dalam perangkat lunak.

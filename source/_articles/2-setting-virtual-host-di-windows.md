@@ -3,7 +3,7 @@ extends: _layouts.post
 section: content
 title: Setting Virtual Host di Windows
 date: 2015-12-05
-description: .
+description: Cara melakukan setting virtual host di os windows
 ---
 
 Pada kali ini saya mau share pengalaman saya dalam melakukan setting virtual host di windows. Setting virtual host ini biasanya saya gunakan untuk develop web app di local. Misalkan saya set url localnya adalah yii.dev atau kalau sedang develop blog, bisa blog.dev atau semacamnya.

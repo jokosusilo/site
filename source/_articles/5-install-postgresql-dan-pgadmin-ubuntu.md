@@ -3,7 +3,7 @@ extends: _layouts.post
 section: content
 title: Install PostgreSQL dan pgAdmin Ubuntu
 date: 2019-01-01
-description: .
+description: Cara install postgresql dan pgadmin di os ubuntu
 ---
 
 Beberapa pekan terakhir ini teman saya di [KadangKoding](https://kadangkoding.com) sedang mengerjakan proyek SIAKAD salah satu perguruan tinggi swasta di daerah Jawa Timur. Dalam implementasinya, database yang digunakan adalah PostgreSQL.

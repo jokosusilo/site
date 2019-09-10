@@ -3,7 +3,7 @@ extends: _layouts.post
 section: content
 title: No More Copy Paste Token in Postman
 date: 2019-09-03
-description: .
+description: No more copy paste token in postman
 ---
 
 Dalam pembuatan API, saya menggunakan postman untuk melakukan testing request. Akan tetapi, request yang ada biasanya perlu
