@@ -1,5 +1,12 @@
 @extends('_layouts.master')
 
+@push('meta')
+    <meta property="og:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ $page->getUrl() }}"/>
+    <meta property="og:description" content="{{ $page->siteDescription }}" />
+@endpush
+
 @section('body')
     <div class="mx-auto flex flex-col justify-center flex-1 my-40">
         <span class="text-homepage-title leading-none mb-1 font-bold text-gray-900">Hi!</span>
