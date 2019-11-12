@@ -26,6 +26,22 @@ return [
                 });
             },
         ],
+        'recommendationList' => [
+            'items' => [
+                [
+                    'title' => 'Refactoring to actions',
+                    'link' => 'https://freek.dev/1371-refactoring-to-actions'
+                ],
+                [
+                    'title' => 'Giving collections a voice',
+                    'link' => 'https://timacdonald.me/giving-collections-a-voice/'
+                ],
+                [
+                    'title' => 'Dedicated query builders for Eloquent models',
+                    'link' => 'https://timacdonald.me/dedicated-eloquent-model-query-builders/'
+                ],
+            ]
+        ]
     ],
 
     // helpers
