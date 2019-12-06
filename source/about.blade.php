@@ -1,10 +1,14 @@
+---
+title: About Me
+---
+
 @extends('_layouts.master')
 
 @push('meta')
-    <meta property="og:title" content="About {{ $page->siteName }}" />
+    <meta property="og:title" content="About Me" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="A little bit about {{ $page->siteName }}" />
+    <meta property="og:description" content="A little bit about me"/>
 @endpush
 
 @section('body')

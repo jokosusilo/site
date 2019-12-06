@@ -1,10 +1,10 @@
 @extends('_layouts.master')
 
 @push('meta')
-    <meta property="og:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
+    <meta property="og:title" content="Hi, I'm Joko Susilo"/>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="{{ $page->siteDescription }}" />
+    <meta property="og:description" content="A web developer. Mostly code in PHP and Javascript. Fall in love with Laravel and VueJS. Interested in minimalist design."/>
 @endpush
 
 @section('body')

@@ -2,14 +2,15 @@
 pagination:
     collection: articles
     perPage: 0
+title: Articles
 ---
 @extends('_layouts.master')
 
 @push('meta')
-    <meta property="og:title" content="{{ $page->siteName }} Blog" />
-    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Articles"/>
+    <meta property="og:type" content="website"/>
     <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="The list of articles for {{ $page->siteName }}" />
+    <meta property="og:description" content="The list articles from {{ $page->siteName }}"/>
 @endpush
 
 @section('body')

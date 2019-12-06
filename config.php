@@ -26,7 +26,7 @@ return [
                 });
             },
         ],
-        'recommendationList' => [
+        'recommendationArticle' => [
             'items' => [
                 [
                     'title' => 'Refactoring to actions',
@@ -39,6 +39,14 @@ return [
                 [
                     'title' => 'Dedicated query builders for Eloquent models',
                     'link' => 'https://timacdonald.me/dedicated-eloquent-model-query-builders/'
+                ],
+            ]
+        ],
+        'recommendationVideo' => [
+            'items' => [
+                [
+                    'title' => '"Cruddy by Design" - Adam Wathan - Laracon US 2017',
+                    'link' => 'https://youtu.be/MF0jFKvS4SI'
                 ],
             ]
         ]
