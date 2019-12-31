@@ -10,4 +10,8 @@
 @import 'mailchimp';
 @import 'blog';
 
+ul{
+	@apply ml-4 list-disc;
+}
+
 @tailwind utilities;
