@@ -4,6 +4,11 @@
         Articles
     </a>
 
+    <a title="{{ $page->siteName }} Journal" href="/journal"
+        class="ml-6 text-gray-700 hover:text-blue-600 {{ $page->isActive('/journal') ? 'active text-blue-600' : '' }}">
+        Journal
+    </a>
+
     <a title="{{ $page->siteName }} Recommendation" href="/recommendation"
         class="ml-6 text-gray-700 hover:text-blue-600 {{ $page->isActive('/recommendation') ? 'active text-blue-600' : '' }}">
         Recommendation

@@ -18,6 +18,15 @@ return [
                 return implode('-', $filename);
             }
         ],
+        'journal' => [
+            'author' => 'Joko Susilo', // Default author, if not provided in a post
+            'sort' => '-date',
+            'path' => function($page){
+                $filename = explode('-', $page->getFilename());
+                array_shift($filename);
+                return '/journal/'.implode('-', $filename);
+            }
+        ],
         'categories' => [
             'path' => '/blog/categories/{filename}',
             'articles' => function ($page, $allPosts) {
