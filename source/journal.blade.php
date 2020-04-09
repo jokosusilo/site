@@ -14,9 +14,9 @@ title: Work Journal
 @endpush
 
 @section('body')
-    <h1>Work Journal</h1>
-
-    <hr class="border-b my-6">
+    <h1 class="inline-block text-3xl md:text-4xl">
+        Work Journal
+    </h1>
 
     @foreach ($pagination->items as $article)
         @include('_components.article-preview-inline')

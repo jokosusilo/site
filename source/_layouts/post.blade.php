@@ -12,9 +12,9 @@
         <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
     @endif
 
-    <h1 class="leading-none mb-0">{{ $page->title }}</h1>
+    <h1 class="mb-0 text-3xl md:text-4xl">{{ $page->title }}</h1>
 
-    <p class="text-gray-700 text-xl mt-0">{{ date('F j, Y', $page->date) }}</p>
+    <span class="block text-gray-600 text-sm md:text-base mt-0 md:mt-1">{{ date('F j, Y', $page->date) }}</span>
 
     {{-- @if ($page->categories)
         @foreach ($page->categories as $i => $category)
@@ -26,14 +26,14 @@
         @endforeach
     @endif --}}
 
-    <div class="article border-b border-blue-200 mb-10 pb-4" v-pre>
+    <div class="article border-b mb-6 pb-4 leading-relaxed">
         @yield('content')
     </div>
 
     <nav class="flex justify-between text-sm md:text-base">
         <div>
             @if ($next = $page->getNext())
-                <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}">
+                <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}" class="link border-transparent">
                     &LeftArrow; {{ $next->title }}
                 </a>
             @endif
@@ -41,7 +41,7 @@
 
         <div>
             @if ($previous = $page->getPrevious())
-                <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}">
+                <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}" class="link border-transparent">
                     {{ $previous->title }} &RightArrow;
                 </a>
             @endif

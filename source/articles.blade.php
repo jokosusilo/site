@@ -14,20 +14,16 @@ title: Articles
 @endpush
 
 @section('body')
-    <h1>Articles</h1>
-
-    <hr class="border-b my-6">
+    <h1 class="inline-block text-3xl md:text-4xl">
+        Articles
+    </h1>
 
     @foreach ($pagination->items as $article)
         @include('_components.article-preview-inline')
-
-        @if ($article != $pagination->items->last())
-            <hr class="border-b my-6">
-        @endif
     @endforeach
 
     @if ($pagination->pages->count() > 1)
-        <nav class="flex text-base my-8">
+        <nav class="flex my-8">
             @if ($previous = $pagination->previous)
                 <a
                     href="{{ $previous }}"

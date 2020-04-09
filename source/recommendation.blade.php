@@ -12,11 +12,12 @@ title: Recommendation
 @endpush
 
 @section('body')
-    <h1 class="mb-2">Recommendation</h1>
-    <p class="m-0">Collection of link, video or other resource to level up your skills.</p>
+    <h1 class="inline-block text-3xl md:text-4xl mb-0 md:mb-1">
+        Recommendation
+    </h1>
+    <p class="m-0 text-sm md:text-base">Collection of link, video or other resource to level up your skills.</p>
 
-    <hr class="border-b my-6">
-    <h4>Article</h4>
+    <h4 class="mb-1">Article</h4>
     @foreach ($recommendationArticle as $item)
         <div class="flex items-baseline md:items-center mb-1">
             <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="mr-1">
@@ -28,7 +29,7 @@ title: Recommendation
             <a
                 href="{{ $item->link }}"
                 title="Read more - {{ $item->title }}"
-                class="text-gray-700 hover:text-blue-600 font-normal text-lg mt-0"
+                class="link text-black font-normal text-lg mt-0"
                 target="_blank"
             >
                 {{ $item->title }}
@@ -36,7 +37,7 @@ title: Recommendation
         </div>
     @endforeach
 
-    <h4>Video</h4>
+    <h4 class="mb-1">Video</h4>
     @foreach ($recommendationVideo as $item)
         <div class="flex items-baseline md:items-center mb-1">
             <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="mr-1">
@@ -46,7 +47,7 @@ title: Recommendation
             <a
                 href="{{ $item->link }}"
                 title="Watch - {{ $item->title }}"
-                class="text-gray-700 hover:text-blue-600 font-normal text-lg mt-0"
+                class="link text-black font-normal text-lg mt-0"
                 target="_blank"
             >
                 {{ $item->title }}

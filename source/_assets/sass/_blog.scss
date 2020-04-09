@@ -1,6 +1,17 @@
 // Your custom blog styles here
 
 .article img{
-	width: 80%;
-	margin: 0 auto;
+	@apply w-full mx-auto shadow-md mb-4;
+
+    @screen md {
+        width: 80%;
+    }
+}
+
+.article a, .link{
+    @apply font-normal no-underline border-b text-primary;
+
+    &:hover {
+        @apply border-primary;
+    }
 }
