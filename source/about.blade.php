@@ -16,13 +16,15 @@ title: About Me
         About
     </h1>
 
-{{--     <img src="/assets/img/logo.svg"
-        alt="About image"
-        class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">
- --}}
-    <p class="mb-2 md:mb-6">Hi!. Welcome to my site.</p>
+    <div class="article">
+        {{--     <img src="/assets/img/logo.svg"
+                alt="About image"
+                class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">
+         --}}
+            <p>Hi!. Welcome to my site.</p>
 
-    <p class="mb-2 md:mb-6">
-        I'm a web developer. Currently working at <a href="https://kadangkoding.com" class="link">Kadang Koding Indonesia</a>.
-    </p>
+            <p>
+                I'm a web developer. Currently working at <a href="https://kadangkoding.com" class="link">Kadang Koding Indonesia</a>.
+            </p>
+    </div>
 @endsection

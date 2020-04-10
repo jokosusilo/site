@@ -1,3 +1,7 @@
+::selection {
+    @apply bg-black text-white;
+}
+
 h1,
 h2,
 h3,
@@ -7,67 +11,15 @@ h6 {
     @apply leading-tight mb-4 mt-8 text-gray-900;
 
     &:first-child {
-        @apply .mt-0;
-    }
-}
-
-h1 {
-    @apply font-extrabold text-5xl;
-}
-
-h2 {
-    @apply font-bold text-4xl;
-}
-
-h3 {
-    @apply font-bold text-3xl;
-}
-
-h4 {
-    @apply font-normal text-2xl;
-}
-
-h5 {
-    @apply font-normal text-xl;
-}
-
-h6 {
-    @apply font-light text-lg;
-}
-
-hr {
-    @apply border-b border-gray-100 mt-8 mb-0 rounded-full;
-}
-
-ul{
-	@apply ml-4 list-disc;
-}
-
-li {
-    ul,
-    ol {
-        @apply .my-0;
-    }
-}
-
-ol,
-ul {
-    @apply .my-4;
-}
-
-p {
-    @apply .my-3;
-
-    @screen md {
-        @apply .my-6;
+        @apply mt-0;
     }
 }
 
 pre {
-    @apply bg-gray-200 leading-snug my-6 overflow-x-auto p-4 rounded shadow-inner text-base;
+    @apply bg-indigo-100 leading-snug mt-2 mb-6 overflow-x-auto p-0 text-base border-b-4 border-gray-300;
 
     code {
-        @apply bg-transparent block p-0;
+        @apply bg-transparent block px-4;
 
         &::before{
             content: '';
@@ -91,21 +43,12 @@ code {
     }
 }
 
-
 code.hljs {
-    @apply bg-transparent p-0 pb-2;
+    @apply bg-transparent px-4 py-4;
 
     .hljs-comment,
     .hljs-keyword,
     .hljs-meta {
         @apply font-normal not-italic;
     }
-}
-
-blockquote {
-    @apply border-primary border-l-4 italic my-8 pl-4 text-gray-800 leading-tight;
-}
-
-::selection {
-    @apply .bg-black .text-white;
 }

@@ -26,22 +26,22 @@
         @endforeach
     @endif --}}
 
-    <div class="article border-b mb-6 pb-4 leading-relaxed">
+    <div class="article border-b">
         @yield('content')
     </div>
 
-    <nav class="flex justify-between text-sm md:text-base">
-        <div>
+    <nav class="flex flex-col md:flex-row justify-between text-sm md:text-base">
+        <div class="my-1 md:my-0">
             @if ($next = $page->getNext())
-                <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}" class="link border-transparent">
+                <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}" class="link border-transparent block text-left">
                     &LeftArrow; {{ $next->title }}
                 </a>
             @endif
         </div>
 
-        <div>
+        <div class="my-1 md:my-0">
             @if ($previous = $page->getPrevious())
-                <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}" class="link border-transparent">
+                <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}" class="link border-transparent block text-right">
                     {{ $previous->title }} &RightArrow;
                 </a>
             @endif

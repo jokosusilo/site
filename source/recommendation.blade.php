@@ -17,7 +17,7 @@ title: Recommendation
     </h1>
     <p class="m-0 text-sm md:text-base">Collection of link, video or other resource to level up your skills.</p>
 
-    <h4 class="mb-1">Article</h4>
+    <h2 class="text-xl mb-1">Article</h4>
     @foreach ($recommendationArticle as $item)
         <div class="flex items-baseline md:items-center mb-1">
             <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="mr-1">
@@ -29,7 +29,7 @@ title: Recommendation
             <a
                 href="{{ $item->link }}"
                 title="Read more - {{ $item->title }}"
-                class="link text-black font-normal text-lg mt-0"
+                class="link text-black mt-0"
                 target="_blank"
             >
                 {{ $item->title }}
@@ -37,7 +37,7 @@ title: Recommendation
         </div>
     @endforeach
 
-    <h4 class="mb-1">Video</h4>
+    <h2 class="text-xl mb-1">Video</h2>
     @foreach ($recommendationVideo as $item)
         <div class="flex items-baseline md:items-center mb-1">
             <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="mr-1">
@@ -47,7 +47,7 @@ title: Recommendation
             <a
                 href="{{ $item->link }}"
                 title="Watch - {{ $item->title }}"
-                class="link text-black font-normal text-lg mt-0"
+                class="link text-black mt-0"
                 target="_blank"
             >
                 {{ $item->title }}
