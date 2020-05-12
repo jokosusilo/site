@@ -4,12 +4,11 @@ title: About Me
 
 @extends('_layouts.master')
 
-@push('meta')
-    <meta property="og:title" content="About Me" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="A little bit about me"/>
-@endpush
+@include('_components.meta', [
+    'title' => 'About Me',
+    'url' => $page->getUrl(),
+    'description' => 'A little bit about me'
+])
 
 @section('body')
     <h1 class="inline-block text-3xl md:text-4xl">
@@ -19,7 +18,7 @@ title: About Me
     <div class="article">
         {{--     <img src="/assets/img/logo.svg"
                 alt="About image"
-                class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">
+                class="flex w-64 h-64 mx-auto my-6 bg-contain rounded-full md:float-right md:ml-10">
          --}}
             <p>Hi!. Welcome to my site.</p>
 

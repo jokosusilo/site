@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="{{ $page->meta_description ?? $page->siteDescription }}">
 
         @stack('meta')
 
@@ -26,20 +25,20 @@
             </script>
         @endif
 
-        {{-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet"> --}}
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
-    <body class="flex flex-col justify-between min-h-screen text-gray-900 leading-normal font-sans text-base">
-        <header class="flex items-center border-t-4 border-primary md:h-24 py-4 shadow md:shadow-none" role="banner">
-            <div class="container flex items-center max-w-4xl mx-auto px-5 lg:px-6">
+    <body class="flex flex-col justify-between min-h-screen font-sans text-base leading-normal text-gray-900">
+        <header class="flex items-center py-4 border-t-4 shadow border-primary md:h-24 md:shadow-none" role="banner">
+            <div class="container flex items-center max-w-4xl px-5 mx-auto lg:px-6">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }}" class="inline-flex items-center">
-                        <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
+                        <img class="h-8 mr-3 md:h-10" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
                     </a>
                 </div>
 
-                <div class="flex flex-1 justify-end items-center">
+                <div class="flex items-center justify-end flex-1">
                     @include('_nav.menu')
 
                     @include('_nav.menu-toggle')
@@ -49,7 +48,7 @@
 
         @include('_nav.menu-responsive')
 
-        <main role="main" class="flex-auto w-full container max-w-4xl mx-auto py-8 md:py-4 lg:py-16 px-5">
+        <main role="main" class="container flex-auto w-full max-w-4xl px-5 py-8 mx-auto md:py-4 lg:py-16">
             @yield('body')
         </main>
 

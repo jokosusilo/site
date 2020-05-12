@@ -1,4 +1,4 @@
-<nav class="hidden lg:flex items-center justify-end text-lg">
+<nav class="items-center justify-end hidden text-base lg:flex">
     <a title="{{ $page->siteName }} Blog" href="/articles"
         class="ml-6 text-gray-800 hover:text-primary {{ $page->isActive('/articles') ? 'active text-primary' : '' }}">
         Articles

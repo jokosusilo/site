@@ -12,13 +12,13 @@ Virtual host ini sangat berguna bila digunakan untuk develop web app yang endpoi
 
 Langsung saja, ada 2 file yang kita akan diedit.
 
-Pertama
+## Pertama
 Edit file di `C:\Windows\System32\drivers\etc\hosts` dan tambahkan code seperti berikut ini. blog.dev adalah url yang kamu inginkan, bisa diedit sesuka hati.
 
 ```bash
 127.0.0.1 blog.dev
 ```
-Kedua
+## Kedua
 Edit file di `C:\xampp\apache\conf\extra\httpd-vhosts.conf` dan tambahkan code berikut .
 
 ```bash
@@ -34,7 +34,8 @@ Edit file di `C:\xampp\apache\conf\extra\httpd-vhosts.conf` dan tambahkan code b
     </Directory>
 </VirtualHost>
 ```
-**Keterangan**
+### Keterangan
 1. URL di dalam ServerName dan ServerAlias harus disesuaikan dengan url di file `C:\Windows\System32\drivers\etc\hosts`
 2. path/to/project diisi dengan full path project kita berada, misal untuk yii adalah `C:/xampp/htdocs/yii/web/` dan laravel `C:/xampp/htdocs/laravel/public/`
+
 Restart apache dan coba buka blog.dev di browsermu 😀

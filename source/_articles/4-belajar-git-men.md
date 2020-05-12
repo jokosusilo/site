@@ -20,7 +20,7 @@ Karena saya baru belajar GIT, jadi yang saya mau share kali ini adalah penggunaa
 
 Secara umum, urutan untuk local repo adalah `inisiasi` – `add to staging area` – `commit`. Nah, kalau ingin di taruh juga di server semisal bitbucket atau github, maka urutannya berubah menjadi `inisiasi` – `add remote` – `add to staging area` – `commit` – `push to remote`. Penjelasan command lebih detail sebagai berikut.
 
-#### Pertama dan utama
+## Pertama dan utama
 Pastikan git sudah terinstall di komputermu. Kalau belum kunjungi website git download dan install git di komputermu. Kalau sudah, buka application git bash. Kemudian masuk ke directory yang akan digunakan. Misal project saya ada di `C://xampp/htdocs/project` maka,
 
 ```bash
@@ -33,7 +33,7 @@ git init
 # Gunanya untuk inisiasi git repositoy
 ```
 
-#### Add Remote (Optional)
+## Add Remote (Optional)
 Jika hanya ingin sebagai local repository (tidak di upload ke bitbucket atau github) lewati command ini. Jika akan di push ke server, wajib dilakukan
 
 ```bash
@@ -45,7 +45,7 @@ git add .
 add all files to staging area
 ```
 
-#### Commit
+## Commit
 ```bash
 git commit -m "message"
 # Misalkan
@@ -53,7 +53,7 @@ git commit -m "First Commit"
 git commit -m "Fixing error in Controller bla bla bla"
 ```
 
-#### Push ke server (Optional)
+## Push ke server (Optional)
 ```bash
 git push <remote-name, biasanya origin> <branch>
 # Misalkan

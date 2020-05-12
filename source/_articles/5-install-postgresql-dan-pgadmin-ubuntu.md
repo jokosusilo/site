@@ -10,12 +10,12 @@ Beberapa pekan terakhir ini teman saya di [KadangKoding](https://kadangkoding.co
 
 Iseng-iseng ingin melihat hasil aplikasinya, maka saya perlu menginstall Postgre di ubuntu yang saya gunakan. Setelah browsing dan mencoba-coba, berikut langkah-langkah installasinya.
 
-#### 0. Persiapan
+## 0. Persiapan
 ```bash
 sudo apt-get update
 ```
 
-#### 1. Install PostgreSQL
+## 1. Install PostgreSQL
 Untuk menginstall postgre, lakukan command berikut :
 
 ```bash
@@ -37,23 +37,23 @@ Setelah password kita set, dan kita ingin masuk ke postgre lakukan :
 psql -u postgres -h localhost
 ```
 
-#### 2. Install pgAdmin
+## 2. Install pgAdmin
 Karena saya perlu melakukan import database, maka aplikasi yang mungkin paling simple untuk memanage database postgre adalah pgAdmin. Aplikasi ini mirip phpMyAdmin. Atau lebih gampangnya, pgAdmin adalah phpMyadmin untuk postgreSQL.
 
 Dari website [PostgreSQL](https://postgresql.org/) versi terbaru adalah pgAdmin4.
 
 Berikut langkah-langkah installasinya.
 
-##### Import the repository key
+### Import the repository key
 ```bash
 sudo apt-get install wget ca-certificates
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 ```
-##### Add source code repository
+### Add source code repository
 ```bash
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 ```
-##### Installation
+### Installation
 ```bash
 sudo apt-get update
 sudo apt-get install pgadmin4
@@ -61,6 +61,6 @@ sudo apt-get install pgadmin4
 Setelah proses selesai, tinggal masuk ke menu kemudian cari dan jalankan pgAdmin4. Atau dari terminal tinggal ketik pgadmin4
 
 ___
-#### Reference
+## Reference
 1. http://www.indjango.com/ubuntu-install-postgresql-and-pgadmin/
 2. https://wiki.postgresql.org/wiki/Apt

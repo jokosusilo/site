@@ -4,22 +4,21 @@ title: Recommendation
 
 @extends('_layouts.master')
 
-@push('meta')
-    <meta property="og:title" content="Recommendation"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="Collection of link, video or other resource to level up your skills."/>
-@endpush
+@include('_components.meta', [
+    'title' => 'Recommendation',
+    'url' => $page->getUrl(),
+    'description' => 'Collection of link, video or other resource to level up your skills.'
+])
 
 @section('body')
-    <h1 class="inline-block text-3xl md:text-4xl mb-0 md:mb-1">
+    <h1 class="inline-block mb-0 text-3xl md:text-4xl md:mb-1">
         Recommendation
     </h1>
     <p class="m-0 text-sm md:text-base">Collection of link, video or other resource to level up your skills.</p>
 
-    <h2 class="text-xl mb-1">Article</h4>
+    <h2 class="mb-1 text-xl">Article</h4>
     @foreach ($recommendationArticle as $item)
-        <div class="flex items-baseline md:items-center mb-1">
+        <div class="flex items-baseline mb-1 md:items-center">
             <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="mr-1">
                 <polyline points="7 13 12 18 17 13"></polyline>
                 <polyline points="7 6 12 11 17 6"></polyline>
@@ -29,7 +28,7 @@ title: Recommendation
             <a
                 href="{{ $item->link }}"
                 title="Read more - {{ $item->title }}"
-                class="link text-black mt-0"
+                class="mt-0 text-black link"
                 target="_blank"
             >
                 {{ $item->title }}
@@ -37,9 +36,9 @@ title: Recommendation
         </div>
     @endforeach
 
-    <h2 class="text-xl mb-1">Video</h2>
+    <h2 class="mb-1 text-xl">Video</h2>
     @foreach ($recommendationVideo as $item)
-        <div class="flex items-baseline md:items-center mb-1">
+        <div class="flex items-baseline mb-1 md:items-center">
             <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="mr-1">
                 <polyline points="7 13 12 18 17 13"></polyline>
                 <polyline points="7 6 12 11 17 6"></polyline>
@@ -47,7 +46,7 @@ title: Recommendation
             <a
                 href="{{ $item->link }}"
                 title="Watch - {{ $item->title }}"
-                class="link text-black mt-0"
+                class="mt-0 text-black link"
                 target="_blank"
             >
                 {{ $item->title }}

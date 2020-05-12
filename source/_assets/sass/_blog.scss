@@ -3,24 +3,28 @@
 .article {
     @apply leading-relaxed mb-6 pb-4;
 
-    h1, h2, h3, h4, h5, h6{
-        @apply mt-4 mb-0 p-0;
+    h2, h3, h4, h5, h6{
+        @apply mt-6 -mb-2 p-0 font-normal;
+    }
+
+    h2 + pre, h3 + pre, h4 + pre, h5 + pre, h6 + pre{
+        @apply mt-5;
     }
 
     h2 {
-        @apply font-bold text-3xl;
+        @apply text-2xl;
     }
 
     h3 {
-        @apply font-bold text-2xl;
+        @apply text-xl;
     }
 
     h4 {
-        @apply font-normal text-xl;
+        @apply text-lg;
     }
 
     h5 {
-        @apply font-normal text-lg;
+        @apply text-base;
     }
 
     p {
@@ -32,7 +36,7 @@
     }
 
     img{
-        @apply w-full mx-auto shadow-md mb-4;
+        @apply w-full mx-auto shadow mt-3 mb-4;
 
         @screen md {
             width: 80%;

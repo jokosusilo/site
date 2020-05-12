@@ -6,12 +6,11 @@ title: Work Journal
 ---
 @extends('_layouts.master')
 
-@push('meta')
-    <meta property="og:title" content="Work Journal"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="The list work journal from {{ $page->siteName }}"/>
-@endpush
+@include('_components.meta', [
+    'title' => 'Work Journal',
+    'url' => $page->getUrl(),
+    'description' => "The list work journal from {$page->siteName}"
+])
 
 @section('body')
     <h1 class="inline-block text-3xl md:text-4xl">
@@ -22,17 +21,17 @@ title: Work Journal
         @include('_components.article-preview-inline')
 
         @if ($article != $pagination->items->last())
-            <hr class="border-b my-6">
+            <hr class="my-6 border-b">
         @endif
     @endforeach
 
     @if ($pagination->pages->count() > 1)
-        <nav class="flex text-base my-8">
+        <nav class="flex my-8 text-base">
             @if ($previous = $pagination->previous)
                 <a
                     href="{{ $previous }}"
                     title="Previous Page"
-                    class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3"
+                    class="px-5 py-3 mr-3 bg-gray-200 rounded hover:bg-gray-400"
                 >&LeftArrow;</a>
             @endif
 
@@ -48,7 +47,7 @@ title: Work Journal
                 <a
                     href="{{ $next }}"
                     title="Next Page"
-                    class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3"
+                    class="px-5 py-3 mr-3 bg-gray-200 rounded hover:bg-gray-400"
                 >&RightArrow;</a>
             @endif
         </nav>

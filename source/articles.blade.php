@@ -6,12 +6,11 @@ title: Articles
 ---
 @extends('_layouts.master')
 
-@push('meta')
-    <meta property="og:title" content="Articles"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="The list articles from {{ $page->siteName }}"/>
-@endpush
+@include('_components.meta', [
+    'title' => 'Articles',
+    'url' => $page->getUrl(),
+    'description' => "The list articles from {$page->siteName}"
+])
 
 @section('body')
     <h1 class="inline-block text-3xl md:text-4xl">
@@ -28,7 +27,7 @@ title: Articles
                 <a
                     href="{{ $previous }}"
                     title="Previous Page"
-                    class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3"
+                    class="px-5 py-3 mr-3 bg-gray-200 rounded hover:bg-gray-400"
                 >&LeftArrow;</a>
             @endif
 
@@ -44,7 +43,7 @@ title: Articles
                 <a
                     href="{{ $next }}"
                     title="Next Page"
-                    class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3"
+                    class="px-5 py-3 mr-3 bg-gray-200 rounded hover:bg-gray-400"
                 >&RightArrow;</a>
             @endif
         </nav>

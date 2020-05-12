@@ -1,7 +1,11 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
+  purge: false,
   theme: {
     extend: {
       fontFamily: {
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
         mono: [
           'monospace',
         ],
@@ -37,7 +41,7 @@ module.exports = {
       '4xl': '2.125rem',
       '5xl': '2.625rem',
       '6xl': '10rem',
-      'homepage-title': '3.6rem'
+      'homepage-title': '5.6rem'
     },
   },
   variants: {
@@ -46,16 +50,16 @@ module.exports = {
     width: ['responsive', 'focus']
   },
   plugins: [
-    function({ addUtilities }) {
-      const newUtilities = {
-        '.transition-fast': {
-          transition: 'all .2s ease-out',
-        },
-        '.transition': {
-          transition: 'all .5s ease-out',
-        },
-      }
-      addUtilities(newUtilities)
-    }
+    // function({ addUtilities }) {
+    //   const newUtilities = {
+    //     '.transition-fast': {
+    //       transition: 'all .2s ease-out',
+    //     },
+    //     '.transition': {
+    //       transition: 'all .5s ease-out',
+    //     },
+    //   }
+    //   addUtilities(newUtilities)
+    // }
   ]
 }
