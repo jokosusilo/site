@@ -13,16 +13,12 @@ title: Work Journal
 ])
 
 @section('body')
-    <h1 class="inline-block text-3xl md:text-4xl">
+    <h1 class="inline-block text-3xl font-semibold md:text-4xl">
         Work Journal
     </h1>
 
     @foreach ($pagination->items as $article)
         @include('_components.article-preview-inline')
-
-        @if ($article != $pagination->items->last())
-            <hr class="my-6 border-b">
-        @endif
     @endforeach
 
     @if ($pagination->pages->count() > 1)

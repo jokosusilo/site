@@ -7,7 +7,7 @@
         <a
             href="{{ $article->getUrl() }}"
             title="Read more - {{ $article->title }}"
-            class="font-bold tracking-tight text-gray-900 border-b border-transparent hover:text-primary hover:border-b hover:border-primary"
+            class="font-medium tracking-tight text-gray-900 border-b border-transparent hover:text-primary hover:border-b hover:border-primary"
         >{{ $article->title }}</a>
     </h2>
 

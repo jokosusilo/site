@@ -25,11 +25,11 @@
             </script>
         @endif
 
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
-    <body class="flex flex-col justify-between min-h-screen font-sans text-base leading-normal text-gray-900">
+    <body class="flex flex-col justify-between min-h-screen font-sans text-base leading-normal text-gray-800">
         <header class="flex items-center py-4 border-t-4 shadow border-primary md:h-24 md:shadow-none" role="banner">
             <div class="container flex items-center max-w-4xl px-5 mx-auto lg:px-6">
                 <div class="flex items-center">
@@ -48,7 +48,7 @@
 
         @include('_nav.menu-responsive')
 
-        <main role="main" class="container flex-auto w-full max-w-4xl px-5 py-8 mx-auto md:py-4 lg:py-16">
+        <main role="main" class="container flex-auto w-full max-w-4xl px-5 py-8 mx-auto text-lg leading-loose md:py-4 lg:py-16">
             @yield('body')
         </main>
 

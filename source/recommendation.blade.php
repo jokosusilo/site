@@ -11,12 +11,12 @@ title: Recommendation
 ])
 
 @section('body')
-    <h1 class="inline-block mb-0 text-3xl md:text-4xl md:mb-1">
+    <h1 class="inline-block mb-0 text-3xl font-semibold md:text-4xl md:mb-1">
         Recommendation
     </h1>
     <p class="m-0 text-sm md:text-base">Collection of link, video or other resource to level up your skills.</p>
 
-    <h2 class="mb-1 text-xl">Article</h4>
+    <h2 class="mb-1 text-2xl font-medium">Article</h4>
     @foreach ($recommendationArticle as $item)
         <div class="flex items-baseline mb-1 md:items-center">
             <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="mr-1">
@@ -36,7 +36,7 @@ title: Recommendation
         </div>
     @endforeach
 
-    <h2 class="mb-1 text-xl">Video</h2>
+    <h2 class="mb-1 text-2xl font-medium">Video</h2>
     @foreach ($recommendationVideo as $item)
         <div class="flex items-baseline mb-1 md:items-center">
             <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="mr-1">

@@ -1,14 +1,14 @@
 // Your custom blog styles here
 
-.article {
-    @apply leading-relaxed mb-6 pb-4;
+article {
+    @apply mb-6 pb-4;
 
     h2, h3, h4, h5, h6{
-        @apply mt-6 -mb-2 p-0 font-normal;
+        @apply mt-10 -mb-2 p-0 font-medium;
     }
 
-    h2 + pre, h3 + pre, h4 + pre, h5 + pre, h6 + pre{
-        @apply mt-5;
+    h2 + *, h3 + *, h4 + *, h5 + *, h6 + *{
+        @apply mt-4;
     }
 
     h2 {
@@ -27,14 +27,6 @@
         @apply text-base;
     }
 
-    p {
-        @apply .my-3;
-
-        @screen md {
-            @apply mt-3 mb-0;
-        }
-    }
-
     img{
         @apply w-full mx-auto shadow mt-3 mb-4;
 
@@ -51,8 +43,17 @@
         @apply border-b border-gray-100 mt-8 mb-0 rounded-full;
     }
 
+    ol,
+    ul {
+        @apply ml-5;
+    }
+
+    ol{
+        @apply list-decimal;
+    }
+
     ul{
-        @apply ml-4 list-disc;
+        @apply list-disc;
     }
 
     li {
@@ -62,23 +63,13 @@
         }
     }
 
-    ol,
-    ul {
-        @apply .my-4;
+    & > *{
+        @apply mt-8
     }
 
-    p {
-        @apply .my-3;
-
-        @screen md {
-            @apply mt-4 mb-0;
-        }
-    }
 }
 
-
-
-.article a, .link{
+article a, .link{
     @apply font-normal no-underline border-b text-primary;
 
     &:hover {

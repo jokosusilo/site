@@ -13,7 +13,7 @@ title: Articles
 ])
 
 @section('body')
-    <h1 class="inline-block text-3xl md:text-4xl">
+    <h1 class="inline-block text-3xl font-semibold md:text-4xl">
         Articles
     </h1>
 
