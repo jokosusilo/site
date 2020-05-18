@@ -27,7 +27,7 @@ title: Articles
                 <a
                     href="{{ $previous }}"
                     title="Previous Page"
-                    class="px-5 py-3 mr-3 bg-gray-200 rounded hover:bg-gray-400"
+                    class="px-3 py-1 mr-3 bg-gray-200 rounded hover:bg-gray-400"
                 >&LeftArrow;</a>
             @endif
 
@@ -35,7 +35,7 @@ title: Articles
                 <a
                     href="{{ $path }}"
                     title="Go to Page {{ $pageNumber }}"
-                    class="bg-gray-200 hover:bg-gray-400 text-blue-700 rounded mr-3 px-5 py-3 {{ $pagination->currentPage == $pageNumber ? 'text-blue-600' : '' }}"
+                    class="bg-gray-200 hover:bg-gray-400 text-blue-700 rounded mr-3 px-3 py-1 {{ $pagination->currentPage == $pageNumber ? 'text-blue-600' : '' }}"
                 >{{ $pageNumber }}</a>
             @endforeach
 
@@ -43,7 +43,7 @@ title: Articles
                 <a
                     href="{{ $next }}"
                     title="Next Page"
-                    class="px-5 py-3 mr-3 bg-gray-200 rounded hover:bg-gray-400"
+                    class="px-3 py-1 mr-3 bg-gray-200 rounded hover:bg-gray-400"
                 >&RightArrow;</a>
             @endif
         </nav>

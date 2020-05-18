@@ -28,7 +28,7 @@ article {
     }
 
     img{
-        @apply w-full mx-auto shadow mt-3 mb-4;
+        @apply w-full mx-auto mt-3 mb-4;
 
         @screen md {
             width: 80%;

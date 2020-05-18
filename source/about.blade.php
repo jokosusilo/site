@@ -15,15 +15,14 @@ title: About Me
         About
     </h1>
 
-    <div class="article">
+    <article>
         {{--     <img src="/assets/img/logo.svg"
                 alt="About image"
                 class="flex w-64 h-64 mx-auto my-6 bg-contain rounded-full md:float-right md:ml-10">
          --}}
             <p>Hi!. Welcome to my site.</p>
-
             <p>
                 I'm a web developer. Currently working at <a href="https://kadangkoding.com" class="link">Kadang Koding Indonesia</a>.
             </p>
-    </div>
+    </article>
 @endsection

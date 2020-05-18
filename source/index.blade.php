@@ -8,10 +8,11 @@
 
 @section('body')
     <div class="flex flex-col justify-center flex-1 mx-auto my-32">
-        <span class="mb-1 font-semibold leading-none text-gray-800 text-homepage-title">Hi!</span>
-        <h1 class="p-0 m-0 mt-6 text-5xl font-medium leading-none tracking-tight sm:mt-2">I'm Joko Susilo. <span class="block sm:inline">A web developer.</span></h1>
-
-        <p class="my-2 text-xl leading-tight">
+        <span class="text-5xl font-semibold leading-none text-gray-800">Hi!</span>
+        <p class="mt-4 text-xl font-bold leading-tight">
+            I'm Joko Susilo. <span class="block sm:inline">A web developer.
+        </p>
+        <p class="my-2 text-lg leading-tight">
             Mostly code in <code>PHP</code> and <code>Javascript</code>. Fall in love with <code>Laravel</code> and <code>VueJS</code>.
             <br>Interested in minimalist design.
         </p>
