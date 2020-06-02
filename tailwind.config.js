@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['IBM Plex Serif', ...defaultTheme.fontFamily.sans],
         mono: ['monospace'],
       },
       lineHeight: {

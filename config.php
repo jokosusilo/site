@@ -29,14 +29,6 @@ return [
                 return '/journal/'.implode('-', $filename);
             }
         ],
-        'categories' => [
-            'path' => '/blog/categories/{filename}',
-            'articles' => function ($page, $allPosts) {
-                return $allPosts->filter(function ($article) use ($page) {
-                    return $article->categories ? in_array($page->getFilename(), $article->categories, true) : false;
-                });
-            },
-        ],
         'recommendationArticle' => [
             'items' => [
                 [
@@ -50,6 +42,10 @@ return [
                 [
                     'title' => 'Dedicated query builders for Eloquent models',
                     'link' => 'https://timacdonald.me/dedicated-eloquent-model-query-builders/'
+                ],
+                [
+                    'title' => 'Expressive Eloquent Collections',
+                    'link' => 'https://timacdonald.me/talks/expressive-eloquent-collections/'
                 ],
             ]
         ],

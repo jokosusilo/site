@@ -36,7 +36,7 @@ article {
     }
 
     blockquote {
-        @apply border-primary border-l-4 italic my-8 pl-4 text-gray-800 leading-tight;
+        @apply border-primary border-l-4 my-8 pl-4 text-gray-700 text-sm leading-tight;
     }
 
     hr {
@@ -64,7 +64,7 @@ article {
     }
 
     & > *{
-        @apply mt-8
+        margin-top: 1.6rem;
     }
 
 }
