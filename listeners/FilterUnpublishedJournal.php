@@ -12,9 +12,9 @@ class FilterUnpublishedJournal
             return;
         }
 
-        $jigsaw->getCollection('journal')->each(function ($item, $key) use ($jigsaw) {
+        $jigsaw->getCollection('journals')->each(function ($item, $key) use ($jigsaw) {
             if ($item->published == false) {
-                $jigsaw->getCollection('journal')->forget($key);
+                $jigsaw->getCollection('journals')->forget($key);
             }
         });
     }

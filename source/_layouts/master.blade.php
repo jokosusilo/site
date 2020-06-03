@@ -7,7 +7,7 @@
 
         @stack('meta')
 
-        <title>{{ $page->siteName }}{{ $page->title ? ' | ' . $page->title : '' }}</title>
+        <title>{{ ($page->title != '') ? $page->title.' - '.$page->siteName : $page->siteName.' - '.$page->siteAuthorRole }}</title>
 
         <link rel="home" href="{{ $page->baseUrl }}">
         <link rel="icon" href="/favicon.ico">
@@ -33,8 +33,8 @@
         <header class="flex items-center py-4 border-t-8 shadow border-primary md:h-24 md:shadow-none" role="banner">
             <div class="container flex items-center max-w-3xl px-4 mx-auto">
                 <div class="flex items-center">
-                    <a href="/" title="{{ $page->siteName }}" class="inline-flex items-center">
-                        <img class="h-8 mr-3 md:h-10" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
+                    <a href="/" title="{{ $page->siteName }} - {{ $page->siteAuthorRole }}" class="inline-flex items-center">
+                        <img class="h-8 md:h-10" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
                     </a>
                 </div>
 

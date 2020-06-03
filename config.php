@@ -8,6 +8,7 @@ return [
     'siteName' => 'Joko Susilo',
     'siteDescription' => 'Personal Website of Joko Susilo.',
     'siteAuthor' => 'Joko Susilo',
+    'siteAuthorRole' => 'Web Developer',
 
     // collections
     'collections' => [
@@ -20,7 +21,7 @@ return [
                 return implode('-', $filename);
             }
         ],
-        'journal' => [
+        'journals' => [
             'author' => 'Joko Susilo', // Default author, if not provided in a post
             'sort' => '-date',
             'path' => function($page){
