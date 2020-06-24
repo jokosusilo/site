@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Laravel Tabler",
+        "description": "A Laravel front-end scaffolding using Tabler - A premium and open source dashboard template with a responsive and high-quality UI.",
+        "link": "https://github.com/jokosusilo/laravel-tabler"
+    },
+    {
+        "name": "Peta Sebaran Covid 19 Kabupaten Ngawi",
+        "description": "Unofficial peta sebaran kabupaten ngawi. Data bersumber dari Dinas Kesehatan Kabupaten Ngawi. Menggunakan leaflet.js untuk menampilkan data dan laravel sebagai backend untuk input data.",
+        "link": "https://covid19.kampoengngawi.com/peta"
+    }
+]
