@@ -3,6 +3,7 @@ module.exports = {
     title: `Joko Susilo`,
     description: `Web developer. Mostly code in PHP and Javascript. Interested in minimalist design.`,
     author: `@joko_susilo_`,
+    siteUrl: `https://jokosusilo.web.id`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -88,6 +89,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-sitemap`
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
