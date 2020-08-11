@@ -5,7 +5,7 @@ description: Berpindah dari jigsaw ke gatsby. Dari static site generator based o
 draft: false
 ---
 
-Setelah cukup lama menggunakan [jigsaw](https://jigsaw.tighten.co/) sebagai dasar pembuatan website / blog saya ini, beberapa waktu yang lalu saya mencoba untuk pindah ke [gatsby](https://www.gatsbyjs.org/). Lalu, apa sebenarnya yang saya cari? Pengalaman!
+Setelah cukup lama menggunakan [jigsaw](https://jigsaw.tighten.co/) sebagai dasar pembuatan website / blog saya ini, beberapa waktu yang lalu saya mencoba untuk pindah ke [gatsby](https://www.gatsbyjs.org/). Lalu, apa sebenarnya yang saya cari? **Pengalaman!**
 
 Ya emang pengalaman yang saya cari. Di pekerjaan sehari-hari saya lebih sering koding di Laravel. Dulu sempat explore vue untuk membuat Sistem POS (Point of Sales). Tapi ya itu dulu, akhir-akhir ini jarang banget koding javascript. Dan untuk lebih menguasai javascript akhirnya saya memutuskan untuk mencoba membuat website menggunakan javascript.
 
