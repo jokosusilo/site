@@ -5,7 +5,7 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
   },
   purge: {
-    mode: "all",
+    // mode: "all",
     content: [
       "./src/**/*.js",
       "./src/**/*.jsx",
