@@ -6,17 +6,21 @@ import SEO from "../components/seo"
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="About Me" description="A little bit about me"/>
+    <SEO title="About Me" description="A little bit about me" />
     <article>
       <PageTitle>About</PageTitle>
-      <div className="content">
-        <p>Hi!. Welcome to my site.</p>
+      <div className="mt-5 prose max-w-none">
+        <p>Yo! Selamat datang di website ini.</p>
         <p>
-          I'm a web developer. Currently working at{" "}
-          <a href="https://kadangkoding.com">
-            Kadang Koding Indonesia
-          </a>
-          .
+          Saya seorang freelance web developer dari Ngawi, Jawa Timur.
+          {/* Sebelumnya saya bekerja di <a href="https://kadangkoding.com">Kadang Koding Indonesia</a>. */}
+        </p>
+        <p>
+          Akhir-akhir ini fokus koding menggunakan Laravel untuk membuat API atau full website.
+          Sedangkan Javascript saya gunakan untuk membuat static website seperti <a href="https://farm.sukepangon.com">Suke Pangon Farm</a>.
+        </p>
+        <p>
+          Saya membuat halaman <a href="/uses/">uses</a> untuk menulis daftar aplikasi yang biasa saya pakai.
         </p>
       </div>
     </article>

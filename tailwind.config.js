@@ -1,15 +1,37 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
-  purge: [
-    "./src/**/*.js",
-    "./src/**/*.jsx",
-    "./src/**/*.ts",
-    "./src/**/*.tsx"
-  ],
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
+  purge: {
+    mode: "all",
+    content: [
+      "./src/**/*.js",
+      "./src/**/*.jsx",
+      "./src/**/*.ts",
+      "./src/**/*.tsx",
+    ],
+  },
   theme: {
-    extend: {},
+    typography: {
+      default: {
+        css: {
+          // color: "#2d3748",
+          a: {
+            textDecoration: "none",
+            borderBottomWidth: "1px",
+            borderColor: defaultTheme.colors.gray[800]
+          },
+          "figure figcaption": {
+            textAlign: "center",
+          },
+        },
+      },
+    },
   },
   variants: {
-    borderColor: ['responsive', 'hover', 'focus', 'group-hover'],
+    borderColor: ["responsive", "hover", "focus", "group-hover"],
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 }

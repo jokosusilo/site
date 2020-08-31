@@ -13,7 +13,7 @@ const IndexPage = () => (
         <PageTitle>
           Joko Susilo
         </PageTitle>
-        <div className="mt-6 space-y-2 text-lg leading-normal text-gray-700">
+        <div className="mt-6 space-y-2 text-lg text-gray-700">
           <p className="font-semibold text-gray-900">
             Web developer. Mostly code in PHP and Javascript. Interested in minimalist design.
           </p>
@@ -43,12 +43,12 @@ const IndexPage = () => (
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="block p-4 bg-white border border-gray-400 rounded-sm hover:shadow hover:scale-105"
+            className="block p-4 border border-l-4 border-gray-400 rounded-sm hover:shadow-sm hover:scale-105"
           >
             <h3 className="font-semibold text-gray-900">
               {project.name}
             </h3>
-            <p className="leading-snug text-gray-700">
+            <p className="mt-1 leading-snug text-gray-700">
               {project.description}
             </p>
           </a>

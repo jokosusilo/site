@@ -39,7 +39,7 @@ const Article = ({ data, pageContext }) => {
         </PageTitle>
         <div
           dangerouslySetInnerHTML={{ __html: post.html }}
-          className="content"
+          className="mt-5 prose max-w-none"
         />
 
         <nav className="flex flex-col justify-between mt-16 -mx-2 space-y-2 text-sm md:space-y-0 md:flex-row md:text-base">
@@ -47,10 +47,10 @@ const Article = ({ data, pageContext }) => {
             {prev && (
               <Link
                 to={prev.url}
-                className="flex flex-col p-4 text-left border border-gray-400 rounded hover:bg-white"
+                className="flex flex-col p-4 text-left border border-gray-400 rounded hover:bg-gray-100 hover:border-gray-300"
                 title={`Previous Post ${prev.title}`}
               >
-                <span className="text-sm text-gray-500">Previous</span>
+                <span className="text-sm text-gray-600">Previous</span>
                 <span className="text-gray-700">{prev.title}</span>
               </Link>
             )}
@@ -60,10 +60,10 @@ const Article = ({ data, pageContext }) => {
             {next && (
               <Link
                 to={next.url}
-                className="flex flex-col p-4 text-right border border-gray-400 rounded hover:bg-white"
+                className="flex flex-col p-4 text-right border border-gray-400 rounded hover:bg-gray-100 hover:border-gray-300"
                 title={`Next Post ${next.title}`}
               >
-                <span className="text-sm text-gray-500">Next</span>
+                <span className="text-sm text-gray-600">Next</span>
                 <span className="text-gray-700">{next.title}</span>
               </Link>
             )}
