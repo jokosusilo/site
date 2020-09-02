@@ -1,22 +1,38 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import PageTitle from "../components/page-title"
 import SEO from "../components/seo"
-import terminal from "../images/terminal.png"
+import terminalImage from "../images/terminal.png"
+import vscodeImage from "../images/vscode.png"
 
 const UsesPage = () => (
   <Layout>
     <SEO
       title="Uses"
-      description="Halaman yang saya berisi daftar aplikasi yang biasa saya pakai."
+      description="Halaman yang berisi daftar aplikasi yang biasa saya pakai."
     />
     <article>
       <PageTitle>Uses</PageTitle>
       <div className="mt-5 prose max-w-none">
         <p>Halaman ini berisi daftar aplikasi yang biasa saya pakai.</p>
         <h2>Terminal dan Editor</h2>
-        {/* <img src={terminal} alt="Terminal laravel directory list" /> */}
+        <figure>
+          <img
+            src={terminalImage}
+            alt="Terminal laravel directory list"
+            className="w-3/5 mx-auto shadow-lg"
+          />
+          <figcaption>Terminal</figcaption>
+        </figure>
+        <figure>
+          <img
+            src={vscodeImage}
+            alt="Terminal laravel directory list"
+            className="shadow-lg"
+          />
+          <figcaption>VS Code</figcaption>
+        </figure>
+
         <ul>
           <li>
             <strong>Editor: </strong>{" "}

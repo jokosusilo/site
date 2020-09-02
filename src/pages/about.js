@@ -20,7 +20,7 @@ const AboutPage = () => (
           Sedangkan Javascript saya gunakan untuk membuat static website seperti <a href="https://farm.sukepangon.com">Suke Pangon Farm</a>.
         </p>
         <p>
-          Saya membuat halaman <a href="/uses/">uses</a> untuk menulis daftar aplikasi yang biasa saya pakai.
+          Saya membuat halaman <a href="/uses/">/uses</a> untuk menulis daftar aplikasi yang biasa saya pakai.
         </p>
       </div>
     </article>

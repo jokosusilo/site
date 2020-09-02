@@ -47,7 +47,7 @@ const Article = ({ data, pageContext }) => {
             {prev && (
               <Link
                 to={prev.url}
-                className="flex flex-col p-4 text-left border border-gray-400 rounded hover:bg-gray-100 hover:border-gray-300"
+                className="flex flex-col p-4 text-left border border-gray-400 rounded hover:border-gray-800"
                 title={`Previous Post ${prev.title}`}
               >
                 <span className="text-sm text-gray-600">Previous</span>
@@ -60,7 +60,7 @@ const Article = ({ data, pageContext }) => {
             {next && (
               <Link
                 to={next.url}
-                className="flex flex-col p-4 text-right border border-gray-400 rounded hover:bg-gray-100 hover:border-gray-300"
+                className="flex flex-col p-4 text-right border border-gray-400 rounded hover:border-gray-800"
                 title={`Next Post ${next.title}`}
               >
                 <span className="text-sm text-gray-600">Next</span>
