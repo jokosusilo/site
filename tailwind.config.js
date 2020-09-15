@@ -17,7 +17,7 @@ module.exports = {
     typography: {
       default: {
         css: {
-          // color: "#2d3748",
+          color: "#2d3748",
           a: {
             textDecoration: "none",
             borderBottomWidth: "1px",

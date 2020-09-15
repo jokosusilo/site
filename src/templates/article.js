@@ -25,7 +25,10 @@ const Article = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <SEO title={post.frontmatter.title} description={post.frontmatter.description} />
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+      />
 
       <article>
         <div className="flex items-center text-sm text-gray-700">
