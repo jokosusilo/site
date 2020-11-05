@@ -1,3 +1,5 @@
+const tailwindConfig =  require("./tailwind.config.js");
+
 module.exports = {
   siteMetadata: {
     title: `Joko Susilo`,
@@ -90,10 +92,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        postCssPlugins: [
-          require("tailwindcss"),
-          require("./tailwind.config.js"),
-        ],
+        postCssPlugins: [require("tailwindcss")(tailwindConfig)],
       },
     },
     `gatsby-plugin-sitemap`,

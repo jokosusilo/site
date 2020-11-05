@@ -1,8 +1,14 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  experimental: {
+    uniformColorPalette: true,
+  },
   future: {
     removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+    defaultLineHeights: true,
+    standardFontWeights: true,
   },
   purge: {
     // mode: "all",
@@ -21,7 +27,7 @@ module.exports = {
           a: {
             textDecoration: "none",
             borderBottomWidth: "1px",
-            borderColor: defaultTheme.colors.gray[800]
+            borderColor: defaultTheme.colors.gray[800],
           },
           "figure figcaption": {
             textAlign: "center",

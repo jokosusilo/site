@@ -43,7 +43,7 @@ const IndexPage = () => (
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="block p-4 border border-l-4 border-gray-400 rounded-sm hover:shadow-sm hover:scale-105"
+            className="block p-4 border border-l-4 border-gray-300 rounded-sm hover:shadow-sm hover:scale-105"
           >
             <h3 className="font-semibold text-gray-900">
               {project.name}

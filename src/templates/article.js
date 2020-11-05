@@ -31,18 +31,18 @@ const Article = ({ data, pageContext }) => {
       />
 
       <article>
-        <div className="flex items-center text-sm text-gray-700">
-          {convertDate(post.frontmatter.date)}
-        </div>
         <PageTitle>
           {post.frontmatter.title}
           {post.frontmatter.draft && (
             <span className="text-red-600"> - Draft</span>
           )}
         </PageTitle>
+        <div className="flex items-center text-sm text-gray-700">
+          {convertDate(post.frontmatter.date)}
+        </div>
         <div
           dangerouslySetInnerHTML={{ __html: post.html }}
-          className="mt-5 prose max-w-none"
+          className="pt-12 prose max-w-none"
         />
 
         <nav className="flex flex-col justify-between mt-16 -mx-2 space-y-2 text-sm md:space-y-0 md:flex-row md:text-base">

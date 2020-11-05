@@ -1,7 +1,7 @@
 import React from "react"
 
 const Footer = () => (
-  <footer className="container flex items-center justify-between w-full max-w-3xl px-4 pt-20 pb-8 mx-auto text-sm text-gray-700">
+  <footer className="container flex items-center justify-between w-full max-w-3xl px-4 pt-20 pb-8 mx-auto text-sm text-gray-600">
     <div>
       <p>
         © {new Date().getFullYear()}, Built with{" "}
@@ -20,7 +20,7 @@ const Footer = () => (
         href="https://twitter.com/joko_susilo_"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block w-8 text-gray-700 hover:text-black"
+        className="inline-block w-8 text-gray-600 hover:text-black"
         title="Twitter"
       >
         <svg
@@ -37,7 +37,7 @@ const Footer = () => (
         href="https://github.com/jokosusilo"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block w-8 text-gray-700 hover:text-black"
+        className="inline-block w-8 text-gray-600 hover:text-black"
         title="GitHub"
       >
         <svg
@@ -52,7 +52,7 @@ const Footer = () => (
       </a>
       <a
         href="mailto:jksusilo28@gmail.com?Subject=Hello!"
-        className="inline-block w-8 text-gray-700 hover:text-black"
+        className="inline-block w-8 text-gray-600 hover:text-black"
         title="Email"
       >
         <svg
@@ -67,7 +67,6 @@ const Footer = () => (
             height="320"
             style={{
               fill: "none",
-              stroke: "#000",
               strokeLinecap: "round",
               strokeLinejoin: "round",
               strokeWidth: "32px",
@@ -81,7 +80,6 @@ const Footer = () => (
           <polyline
             style={{
               fill: "none",
-              stroke: "#000",
               strokeLinecap: "round",
               strokeLinejoin: "round",
               strokeWidth: "32px",

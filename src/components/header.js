@@ -12,7 +12,7 @@ const Header = () => (
           to="/"
           className="inline-flex items-center hover:scale-125"
         >
-          <svg className="icon icon-tabler icon-tabler-cloud-storm" height="32" width="32" fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg className="icon icon-tabler icon-tabler-cloud-storm" height="40" width="40" fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0h24v24H0z" stroke="none" />
             <path d="M7 18a4.6 4.4 0 0 1 0 -9h0a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1" />
             <polyline points="13 14 11 18 14 18 12 22" />
@@ -23,22 +23,22 @@ const Header = () => (
         <nav className="flex flex-row items-center w-full space-x-6 text-gray-700">
           <Link
             to="/articles/"
-            className="border-b border-transparent hover:text-black hover:border-black"
-            activeClassName="border-black text-black"
+            className="hover:text-black hover:border-black"
+            activeClassName="font-bold"
           >
             Articles
           </Link>
           <Link
             to="/recommendation/"
-            className="border-b border-transparent hover:text-black hover:border-black"
-            activeClassName="border-black text-black"
+            className="hover:text-black hover:border-black"
+            activeClassName="font-bold"
           >
             Recommendation
           </Link>
           <Link
             to="/about/"
-            className="border-b border-transparent hover:text-black hover:border-black"
-            activeClassName="border-black text-black"
+            className="hover:text-black hover:border-black"
+            activeClassName="font-bold"
           >
             About
           </Link>
