@@ -1,13 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const RecommendationLink = ({ type, title, link }) => (
+const BookmarkLink = ({ type, title, link }) => (
   <a
     href={link}
     title={`${type === `article` ? `Read more` : `Watch`} - ${title}`}
     className="flex items-center mt-0 text-gray-700 hover:text-black hover:border-black group"
     target="_blank"
-    rel="noreferrer"
+    rel="noreferrer noopener"
   >
     <svg
       viewBox="0 0 24 24"
@@ -29,14 +29,14 @@ const RecommendationLink = ({ type, title, link }) => (
   </a>
 )
 
-RecommendationLink.propTypes = {
+BookmarkLink.propTypes = {
   type: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
 }
 
-RecommendationLink.defaultProps = {
+BookmarkLink.defaultProps = {
   type: `article`,
 }
 
-export default RecommendationLink
+export default BookmarkLink

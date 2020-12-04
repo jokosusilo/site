@@ -48,17 +48,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Lato`,
-          },
-          {
-            family: `Merriweather`,
-            variants: [`700`],
-          },
-        ],
+        fonts: [`Lato`, `Merriweather\:700`],
+        display: "swap",
       },
     },
     {

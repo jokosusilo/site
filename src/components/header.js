@@ -29,11 +29,11 @@ const Header = () => (
             Articles
           </Link>
           <Link
-            to="/recommendation/"
+            to="/bookmark/"
             className="hover:text-black hover:border-black"
             activeClassName="font-bold"
           >
-            Recommendation
+            Bookmark
           </Link>
           <Link
             to="/about/"
