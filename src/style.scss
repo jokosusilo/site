@@ -11,16 +11,14 @@ a{
 }
 
 p{
-    @apply leading-relaxed;
-}
-
-h1{
-    font-family: 'Merriweather', serif;
+    @apply leading-7;
 }
 
 .prose {
     .shiki{
         @apply border border-b-4 border-gray-300;
+        // background-color: rgb(249, 250, 251) !important;
+        background-color: rgb(251, 251, 251) !important;
     }
 
     // .gatsby-resp-image-image{

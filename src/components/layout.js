@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
         <body className="flex flex-col justify-between min-h-screen font-sans text-base leading-normal text-black" />
       </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main className="container flex-1 w-full max-w-3xl px-4 pt-12 mx-auto md:pt-24">
+      <main className="container flex-1 w-full max-w-3xl px-4 pt-12 pb-8 mx-auto">
         {children}
       </main>
       <Footer />

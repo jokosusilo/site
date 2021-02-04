@@ -17,14 +17,14 @@ const BookMarkPage = () => (
     </p>
 
     <h2 className="mt-8 text-3xl">Article</h2>
-    <div className="space-y-2">
+    <div className="mt-3 space-y-2">
       {bookmarkArticle.map((item, index) => (
         <BookmarkLink key={index} type="article" title={item.title} link={item.link} />
       ))}
     </div>
 
     <h2 className="mt-8 text-3xl">Video</h2>
-    <div className="space-y-2">
+    <div className="mt-3 space-y-2">
       {bookmarkVideo.map((item, index) => (
         <BookmarkLink key={index} type="video" title={item.title} link={item.link} />
       ))}

@@ -37,15 +37,17 @@ const Article = ({ data, pageContext }) => {
             <span className="text-red-600"> - Draft</span>
           )}
         </PageTitle>
-        <div className="flex items-center text-sm text-gray-700">
+        <div className="flex items-center mt-2 text-sm text-gray-700">
           {convertDate(post.frontmatter.date)}
         </div>
         <div
           dangerouslySetInnerHTML={{ __html: post.html }}
-          className="pt-12 prose max-w-none"
+          className="pt-8 pb-12 prose max-w-none"
         />
 
-        <nav className="flex flex-col justify-between mt-16 -mx-2 space-y-2 text-sm md:space-y-0 md:flex-row md:text-base">
+        <hr className="mx-auto border-t-2 border-gray-400 border-dashed w-72"/>
+
+        <nav className="flex flex-col justify-between pt-8 -mx-2 space-y-2 text-sm md:space-y-0 md:flex-row md:text-base">
           <div className="w-full px-2 md:w-1/2">
             {prev && (
               <Link
@@ -53,7 +55,20 @@ const Article = ({ data, pageContext }) => {
                 className="flex flex-col p-4 text-left border border-gray-400 rounded hover:border-gray-800"
                 title={`Previous Post ${prev.title}`}
               >
-                <span className="text-sm text-gray-600">Previous</span>
+                <span className="flex items-center text-sm text-gray-600">
+                  <svg
+                    className="inline-block w-4 h-4 stroke-current"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeWidth="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <polyline points="11 17 6 12 11 7" />
+                    <polyline points="18 17 13 12 18 7" />
+                  </svg>
+                  Previous
+                </span>
                 <span className="text-gray-700">{prev.title}</span>
               </Link>
             )}
@@ -66,7 +81,20 @@ const Article = ({ data, pageContext }) => {
                 className="flex flex-col p-4 text-right border border-gray-400 rounded hover:border-gray-800"
                 title={`Next Post ${next.title}`}
               >
-                <span className="text-sm text-gray-600">Next</span>
+                <span className="flex items-center justify-end text-sm text-gray-600">
+                  Next{" "}
+                  <svg
+                    className="inline-block w-4 h-4 stroke-current"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeWidth="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <polyline points="13 17 18 12 13 7" />
+                    <polyline points="6 17 11 12 6 7" />
+                  </svg>
+                </span>
                 <span className="text-gray-700">{next.title}</span>
               </Link>
             )}

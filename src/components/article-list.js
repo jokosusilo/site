@@ -12,7 +12,7 @@ const ArticleList = ({ node }) => (
       <Link
         to={node.fields.slug}
         title={`Read more - ${node.frontmatter.title}`}
-        className="font-semibold tracking-tight border-b border-transparent hover:border-black"
+        className="font-semibold border-b border-transparent hover:border-black"
       >
         {node.frontmatter.title}
         {node.frontmatter.draft && (

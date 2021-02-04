@@ -3,13 +3,14 @@ import { Link } from "gatsby"
 
 const Header = () => (
   <header
-    className="flex items-center py-4 shadow-sm md:h-20"
+    className="flex items-center py-4 border-b border-dashed md:h-24"
     role="banner"
   >
     <div className="container flex flex-col items-center max-w-3xl px-4 mx-auto md:flex-row">
       <div className="flex items-center justify-center w-full md:justify-start">
         <Link
           to="/"
+          aria-label="Joko Susilo"
           className="inline-flex items-center hover:scale-125"
         >
           <svg className="icon icon-tabler icon-tabler-cloud-storm" height="40" width="40" fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

@@ -58,7 +58,6 @@ sudo apt-get install pgadmin4
 ```
 Setelah proses selesai, tinggal masuk ke menu kemudian cari dan jalankan pgAdmin4. Atau dari terminal tinggal ketik pgadmin4
 
-___
 ## Reference
 1. http://www.indjango.com/ubuntu-install-postgresql-and-pgadmin/
 2. https://wiki.postgresql.org/wiki/Apt

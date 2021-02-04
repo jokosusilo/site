@@ -1,7 +1,7 @@
 import React from "react"
 
 const PageTitle = ({children}) => (
-  <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
+  <h1 className="text-5xl font-semibold leading-tight">
     {children}
   </h1>
 )

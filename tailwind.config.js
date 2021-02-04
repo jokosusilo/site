@@ -4,25 +4,35 @@ module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      'sans': ['Lato', defaultTheme.fontFamily.sans]
+      sans: ["DM Sans", defaultTheme.fontFamily.sans],
     },
     extend: {
-      typography: {
+      typography: theme => ({
         DEFAULT: {
           css: {
             color: "#2d3748",
             a: {
+              // color: theme("colors.indigo.500"),
               textDecoration: "none",
               borderBottomWidth: "1px",
-              borderColor: defaultTheme.colors.gray[800],
+              borderColor: theme("colors.gray.400"),
+              "&:hover": {
+                fontWeight: "medium",
+                // color: theme("colors.indigo.700"),
+                borderColor: theme("colors.gray.800"),
+              },
             },
             "figure figcaption": {
               textAlign: "center",
             },
+            // code: {
+            //   color: theme("colors.purple.600"),
+            //   fontWeight: 400,
+            // },
           },
         },
-      },
-    }
+      }),
+    },
   },
   variants: {
     borderColor: ["responsive", "hover", "focus", "group-hover"],
