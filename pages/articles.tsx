@@ -1,4 +1,3 @@
-import MoreStories from '../components/more-stories'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
@@ -22,7 +21,6 @@ export default function Articles({ allPosts }: Props) {
         <div className="max-w-3xl mx-4 md:mx-auto">
           <PageTitle>Articles</PageTitle>
           <div className="mt-8 space-y-8 md:-mx-6">
-            {/* <MoreStories posts={allPosts} /> */}
             {allPosts.map((post) => (
               <PostPreview
                 key={post.slug}
