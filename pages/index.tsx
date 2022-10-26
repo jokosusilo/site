@@ -13,11 +13,11 @@ export default function Index() {
         <Header />
         <div className="flex flex-col max-w-3xl mx-4 md:mx-auto">
           <div>
-            <h1 className="text-xl font-extrabold tracking-tight text-slate-900">
+            <h1 className="text-xl font-bold tracking-tight text-slate-900">
               Joko Susilo
             </h1>
             <div className="mt-4 space-y-4">
-              <p className="text-3xl font-semibold text-gray-900 ">
+              <p className="text-3xl font-bold text-gray-900 ">
                 Web developer. Mostly code in PHP and Javascript. <br />
                 Interested in minimalist design.
               </p>
