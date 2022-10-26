@@ -1,6 +1,6 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import Header from '../components/header'
 import PageTitle from '../components/page-title'
 
