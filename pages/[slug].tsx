@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Header from '../components/header'
-import Layout from '../components/layout'
+import Layout from '../components/layout-article'
 import { getPostBySlug, getAllPosts } from '../lib/api'
 import PageTitle from '../components/page-title'
 import Head from 'next/head'
@@ -34,13 +34,13 @@ export default function Post({ post, morePosts, preview }: Props) {
               <meta property="og:image" content={post.ogImage.url} />
             )}
           </Head>
-          <article className="max-w-3xl mx-4 mb-32 md:mx-auto">
+          <article className="max-w-3xl p-4 -mt-12 bg-white rounded-sm shadow-sm md:mt-0 md:p-8 md:mx-auto">
             <div className="mb-2 text-sm text-gray-600">
               <DateFormatter dateString={post.date} />
             </div>
             <PageTitle>{post.title}</PageTitle>
             <div
-              className="mt-8 prose prose-slate max-w-none prose-figure:w-3/4 prose-figure:mx-auto prose-figcaption:text-center"
+              className="mt-8 prose max-w-none prose-figure:w-3/4 prose-figure:mx-auto prose-figcaption:text-center"
               dangerouslySetInnerHTML={{ __html: post.content }}
             ></div>
           </article>

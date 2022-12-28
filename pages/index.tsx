@@ -50,7 +50,7 @@ export default function Index() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block px-6 py-4 transition bg-white border border-gray-200 rounded hover:border-indigo-500 hover:scale-100 hover:bg-indigo-50/70"
+                className="block px-6 py-4 transition border border-transparent rounded-lg hover:shadow-sm bg-gray-50 hover:border-indigo-500 hover:scale-100 hover:bg-indigo-50/70"
               >
                 <h3 className="font-semibold text-gray-900">{project.name}</h3>
                 <p className="mt-1 text-sm leading-normal text-gray-700">

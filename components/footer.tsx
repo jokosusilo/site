@@ -1,10 +1,16 @@
-const Footer = () => {
+type Props = {
+  variant?: string
+}
+
+const Footer = ({
+  variant
+}:Props) => {
   return (
-    <footer className="border-t bg-neutral-50 border-neutral-200">
+    <footer className={variant == "white" ? "bg-white" : "bg-gray-50"}>
       <div className="container px-4 mx-auto">
         <div className="flex flex-col items-center justify-between py-8 space-y-2 md:space-y-0 lg:flex-row">
-          <p className='text-sm text-gray-700'>
-            ©{new Date().getFullYear()}, Built with{' '}
+          <p className="text-sm text-gray-700">
+            ©{new Date().getFullYear()}, Built with{" "}
             <a
               href="https://nextjs.org/"
               className="border-b border-gray-500 hover:text-black hover:border-black"
@@ -65,10 +71,10 @@ const Footer = () => {
                 <rect
                   height="320"
                   style={{
-                    fill: 'none',
-                    strokeLinecap: 'round',
-                    strokeLinejoin: 'round',
-                    strokeWidth: '32px',
+                    fill: "none",
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round",
+                    strokeWidth: "32px",
                   }}
                   width="416"
                   rx="40"
@@ -78,10 +84,10 @@ const Footer = () => {
                 />
                 <polyline
                   style={{
-                    fill: 'none',
-                    strokeLinecap: 'round',
-                    strokeLinejoin: 'round',
-                    strokeWidth: '32px',
+                    fill: "none",
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round",
+                    strokeWidth: "32px",
                   }}
                   points="112 160 256 272 400 160"
                 />
@@ -91,7 +97,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
+  )
 }
 
 export default Footer

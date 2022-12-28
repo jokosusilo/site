@@ -26,13 +26,13 @@ const Header = () => {
         <div className="flex justify-end mt-3 md:mt-0 md:items-center">
           <nav className="flex flex-row items-center w-full space-x-6 text-gray-700">
             <ActiveLink href="/articles" activeClassName="font-bold text-black">
-              <span className="hover:text-black hover:border-black hover:underline">Articles</span>
+              <span className="hover:text-black hover:border-black hover:font-bold">Articles</span>
             </ActiveLink>
             <ActiveLink href="/bookmark" activeClassName="font-bold text-black">
-              <span className="hover:text-black hover:border-black hover:underline">Bookmark</span>
+              <span className="hover:text-black hover:border-black hover:font-bold">Bookmark</span>
             </ActiveLink>
             <ActiveLink href="/about" activeClassName="font-bold text-black">
-              <span className="hover:text-black hover:border-black hover:underline">About</span>
+              <span className="hover:text-black hover:border-black hover:font-bold">About</span>
             </ActiveLink>
           </nav>
         </div>

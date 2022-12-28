@@ -21,7 +21,7 @@ const PostPreview = ({
   return (
     <div>
       <Link as={`/${slug}`} href="/[slug]">
-        <span className="block p-6 transition bg-white border border-transparent rounded-lg hover:bg-indigo-50/70 hover:shadow-sm hover:border-indigo-300">
+        <span className="block p-6 transition border border-transparent rounded-lg group bg-gray-50 hover:bg-indigo-50/70 hover:shadow-sm hover:border-indigo-300">
           <h2 className="text-xl font-bold">{title}</h2>
           <div className="mt-1 mb-3 prose max-w-none">
             <p>{excerpt}</p>
@@ -30,7 +30,7 @@ const PostPreview = ({
             <div className="mb-1 text-xs text-gray-500">
               <DateFormatter dateString={date} />
             </div>
-            <div className="flex items-center text-xs font-medium text-indigo-500">
+            <div className="flex items-center text-xs font-medium text-gray-500 group-hover:text-indigo-500">
               <span>Read more</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ const PostPreview = ({
         </span>
       </Link>
     </div>
-  );
+  )
 }
 
 export default PostPreview

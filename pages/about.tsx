@@ -1,4 +1,4 @@
-import Layout from '../components/layout'
+import Layout from '../components/layout-article'
 import Head from 'next/head'
 import Header from '../components/header'
 import PageTitle from '../components/page-title'
@@ -11,7 +11,7 @@ export default function Uses() {
       </Head>
       <Layout>
         <Header />
-        <article className="max-w-3xl mx-4 md:mx-auto">
+        <article className="max-w-3xl p-4 -mt-12 bg-white rounded-sm shadow-sm md:mt-0 md:p-8 md:mx-auto">
           <PageTitle>About</PageTitle>
           <div className="mt-6 prose">
             <p>Yo! Selamat datang di website ini.</p>
@@ -20,9 +20,9 @@ export default function Uses() {
               {/* Sebelumnya saya bekerja di <a href="https://kadangkoding.com">Kadang Koding Indonesia</a>. */}
             </p>
             <p>
-              Akhir-akhir ini fokus koding menggunakan Laravel untuk membuat
-              API atau full website. Sedangkan Javascript saya gunakan untuk
-              membuat static website seperti{' '}
+              Akhir-akhir ini fokus koding menggunakan Laravel untuk membuat API
+              atau full website. Sedangkan Javascript saya gunakan untuk membuat
+              static website seperti{" "}
               <a href="https://farm.sukepangon.com">Suke Pangon Farm</a>.
             </p>
             <p>
@@ -33,5 +33,5 @@ export default function Uses() {
         </article>
       </Layout>
     </>
-  );
+  )
 }
