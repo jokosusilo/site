@@ -34,7 +34,7 @@ export default function Post({ post, morePosts, preview }: Props) {
               <meta property="og:image" content={post.ogImage.url} />
             )}
           </Head>
-          <article className="max-w-3xl p-4 -mt-12 bg-white rounded-sm shadow-sm md:mt-0 md:p-8 md:mx-auto">
+          <article className="flex-1 w-full max-w-3xl p-4 -mt-12 bg-white rounded-sm shadow-sm md:mt-0 md:p-8 md:mx-auto">
             <div className="mb-2 text-sm text-gray-600">
               <DateFormatter dateString={post.date} />
             </div>

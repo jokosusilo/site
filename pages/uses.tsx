@@ -12,7 +12,7 @@ export default function Uses() {
       </Head>
       <Layout>
         <Header />
-        <article className="max-w-3xl mx-auto">
+        <article className="max-w-3xl p-4 mx-auto -mt-12 md:p-0 md:-mt-0">
           <PageTitle>Uses Page</PageTitle>
           <div className="mt-5 prose max-w-none">
             <p>Halaman ini berisi daftar aplikasi yang biasa saya pakai.</p>
