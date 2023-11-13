@@ -1,0 +1,23 @@
+[
+    {
+        "year": "2020 - Present",
+        "title": "Freelance Web Developer",
+        "company": "freelance",
+        "description": "",
+        "tags": "php, javascript, laravel, tailwind"
+    },
+    {
+        "year": "2018 - 2020",
+        "title": "Web Developer",
+        "company": "Kadang Koding Indonesia",
+        "description": "",
+        "tags": "php, javascript, laravel"
+    },
+    {
+        "year": "2017 - 2018",
+        "title": "Web Developer",
+        "company": "PT Gamatechno Indonesia",
+        "description": "",
+        "tags": "php, javascript, laravel"
+    }
+]
