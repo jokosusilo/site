@@ -1,12 +1,35 @@
 [
     {
-        "name": "Laravel Tabler",
-        "description": "A Laravel front-end scaffolding using Tabler - A premium and open source dashboard template with a responsive and high-quality UI.",
-        "link": "https://github.com/jokosusilo/laravel-tabler"
+        "name": "Locarpet",
+        "description": "Online shop custom rugs.",
+        "year": "2022",
+        "link": "https://locarpet.com",
+        "img": "locarpet.png"
+    },
+    {
+        "name": "Sweda.co",
+        "description": "Online shop handmade jewelry.",
+        "year": "2022",
+        "link": "https://sweda.co",
+        "img": "sweda.png"
+    },
+    {
+        "name": "Jateng Edufest",
+        "description": "",
+        "year": "2021",
+        "link": "https://wahidfoundation.org/jatengedufest2021",
+        "img": "edufest2021.png"
     },
     {
         "name": "Peta Sebaran Covid 19 Kabupaten Ngawi",
         "description": "Unofficial peta sebaran kabupaten ngawi. Data bersumber dari Dinas Kesehatan Kabupaten Ngawi. Menggunakan leaflet.js untuk menampilkan data dan laravel sebagai backend untuk input data.",
+        "year": "2021",
         "link": "https://covid19.kampoengngawi.com/peta"
+    },
+    {
+        "name": "Laravel Tabler",
+        "year": "2020",
+        "description": "A Laravel front-end scaffolding using Tabler - A premium and open source dashboard template with a responsive and high-quality UI.",
+        "link": "https://github.com/jokosusilo/laravel-tabler"
     }
 ]

@@ -1,5 +1,6 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
+import Image from 'next/image'
 import Header from '../components/header'
 import latestProject from '../content/latest-project.json'
 
@@ -17,8 +18,9 @@ export default function Index() {
               Joko Susilo
             </h1>
             <div className="mt-4 space-y-4">
-              <p className="text-3xl font-bold text-gray-900 ">
-                Web developer. Mostly code in PHP and Javascript. <br />
+              <p className="text-3xl font-bold leading-10 text-gray-900">
+                <span className='text-gray-500'>Web developer.</span> Mostly code in PHP and Javascript.{" "}
+                <br />
                 Interested in minimalist design.
               </p>
               <p className="text-gray-700">
@@ -28,9 +30,10 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="flex flex-col justify-between mt-16 md:items-end md:flex-row">
-            <h3 className="text-xl font-semibold">Recent Projects</h3>
-            <p className="text-sm text-gray-700">
+          <div className="flex items-baseline pb-4 mt-24 ">
+            <h3 className="flex-shrink-0 font-semibold text-gray-500">Recent Projects</h3>
+            <div className='w-full h-[1px] bg-gray-200 ml-2'></div>
+            {/* <p className="text-sm text-gray-700">
               More can be found on my
               <a
                 href="https://github.com/jokosusilo"
@@ -41,26 +44,47 @@ export default function Index() {
                 GitHub
               </a>
               .
-            </p>
+            </p> */}
           </div>
-          <div className="mt-6 space-y-4">
+          {/* <div className="mt-8 space-y-8 md:-mx-6"></div> */}
+          <div className="space-y-8 md:-mx-6">
             {latestProject.map((project, index) => (
               <a
                 key={index}
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block px-6 py-4 transition border border-transparent rounded-lg hover:shadow-sm bg-gray-50 hover:border-indigo-500 hover:scale-100 hover:bg-indigo-50/70"
+                className="block p-6 transition border border-gray-100 rounded-lg bg-gray-50 hover:shadow-sm hover:border-indigo-500 hover:scale-100 hover:bg-indigo-50/70"
               >
-                <h3 className="font-semibold text-gray-900">{project.name}</h3>
-                <p className="mt-1 text-sm leading-normal text-gray-700">
-                  {project.description}
-                </p>
+                <div className="flex flex-col">
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {project.name}{" "}
+                    <span className="p-1 text-xs font-normal text-gray-700 bg-gray-100 rounded">
+                      {project.year}
+                    </span>
+                  </h3>
+                  <p className="mt-1 text-sm leading-normal text-gray-700">
+                    {project.description}
+                  </p>
+                  <div className="mt-4 bg-gray-50">
+                    {project.img && (
+                      <Image
+                        src={`/img/project/${project.img}`}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: "100%", height: "auto" }}
+                        alt={project.name}
+                        // fill={true}
+                      />
+                    )}
+                  </div>
+                </div>
               </a>
             ))}
           </div>
         </div>
       </Layout>
     </>
-  );
+  )
 }

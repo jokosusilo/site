@@ -3,7 +3,7 @@ import ActiveLink from './active-link';
 
 const Header = () => {
   return (
-    <div className="sticky top-0 py-4 mb-12 transition-colors duration-500 shadow-sm bg-white/75 backdrop-blur supports-backdrop-blur:bg-white/30">
+    <div className="sticky top-0 z-10 py-2 mb-12 transition-colors duration-500 shadow-sm bg-white/75 backdrop-blur supports-backdrop-blur:bg-white/30">
       <div className="flex flex-col items-center justify-between max-w-3xl mx-auto md:flex-row ">
         <Link
           href="/"
