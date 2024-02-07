@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import ActiveLink from './active-link';
+import Image from 'next/image';
 
 const Header = () => {
   return (
@@ -9,7 +10,14 @@ const Header = () => {
           href="/"
           className="flex space-x-2 text-2xl font-bold leading-tight tracking-tight transition ease-in-out md:text-4xl md:tracking-tighter hover:underline hover:text-indigo-500 hover:scale-110"
         >
-          <img src="panda.png" alt="" className='w-12' />
+          <Image
+            src="/img/panda.png"
+            width={48}
+            height={48}
+            alt='Joko Susilo'
+            className="w-12"
+          />
+          <img src="panda.png" alt="" className="w-12" />
         </Link>
         <div className="flex justify-end mt-3 md:mt-0 md:items-center">
           <nav className="flex flex-row items-center w-full space-x-6 text-gray-700">
