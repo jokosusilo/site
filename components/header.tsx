@@ -17,7 +17,6 @@ const Header = () => {
             alt='Joko Susilo'
             className="w-12"
           />
-          <img src="panda.png" alt="" className="w-12" />
         </Link>
         <div className="flex justify-end mt-3 md:mt-0 md:items-center">
           <nav className="flex flex-row items-center w-full space-x-6 text-gray-700">

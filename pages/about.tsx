@@ -12,7 +12,7 @@ export default function Uses() {
       </Head>
       <Layout>
         <Header />
-        <article className="flex-1 w-full max-w-3xl -mt-12 md:mt-0 md:mx-auto">
+        <article className="flex-1 w-full max-w-3xl p-4 -mt-4 md:mt-0 md:p-0 md:mx-auto">
           <PageTitle>About</PageTitle>
           <div className="mt-6 prose">
             <p>Yo! Selamat datang di website ini.</p>
