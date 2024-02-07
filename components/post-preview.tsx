@@ -21,7 +21,7 @@ const PostPreview = ({
   return (
     <div>
       <Link as={`/${slug}`} href="/[slug]">
-        <span className="block p-6 transition border border-transparent rounded-lg group bg-gray-50 hover:bg-indigo-50/70 hover:shadow-sm hover:border-indigo-300">
+        <span className="block p-6 transition border-2 border-transparent rounded-lg group bg-gray-50 hover:bg-indigo-50/70 hover:shadow-sm hover:border-indigo-500">
           <h2 className="text-xl font-bold">{title}</h2>
           <div className="mt-1 mb-3 prose max-w-none">
             <p>{excerpt}</p>

@@ -25,7 +25,7 @@ export default function Uses() {
                 alt="Terminal laravel directory list"
                 className="mx-auto shadow-lg"
               />
-              <figcaption className="text-center">Terminal</figcaption>
+              <figcaption className="font-bold text-center">Terminal</figcaption>
             </figure>
             <figure>
               <Image
@@ -35,7 +35,7 @@ export default function Uses() {
                 alt="VS Code Laravel"
                 className="mx-auto shadow-lg"
               />
-              <figcaption className="text-center">VS Code</figcaption>
+              <figcaption className="font-bold text-center">VS Code</figcaption>
             </figure>
 
             <ul>

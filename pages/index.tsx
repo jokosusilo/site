@@ -18,9 +18,9 @@ export default function Index() {
               Joko Susilo
             </h1>
             <div className="mt-4 space-y-4">
-              <p className="text-3xl font-bold leading-10 text-gray-900">
-                <span className='text-gray-500'>Web developer.</span> Mostly code in PHP and Javascript.{" "}
-                <br />
+              <p className="text-3xl font-bold leading-10 tracking-wide text-gray-900">
+                <span className="text-gray-500">Web developer.</span> Mostly
+                code in PHP and Javascript. <br />
                 Interested in minimalist design.
               </p>
               <p className="text-gray-700">
@@ -31,8 +31,10 @@ export default function Index() {
           </div>
 
           <div className="flex items-baseline pb-4 mt-24 ">
-            <h3 className="flex-shrink-0 font-semibold text-gray-500">Recent Projects</h3>
-            <div className='w-full h-[1px] bg-gray-200 ml-2'></div>
+            <h3 className="flex-shrink-0 font-semibold text-gray-500">
+              Recent Projects
+            </h3>
+            <div className="w-full h-[1px] bg-gray-200 ml-2"></div>
             {/* <p className="text-sm text-gray-700">
               More can be found on my
               <a
@@ -54,7 +56,7 @@ export default function Index() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block p-6 transition border border-gray-100 rounded-lg bg-gray-50 hover:shadow-sm hover:border-indigo-500 hover:scale-100 hover:bg-indigo-50/70"
+                className="block p-6 transition border-2 border-transparent border-gray-100 rounded-lg bg-gray-50 hover:shadow-sm hover:border-indigo-500 hover:border-2 hover:scale-100 hover:bg-indigo-50/70"
               >
                 <div className="flex flex-col">
                   <h3 className="text-xl font-semibold text-gray-900">
